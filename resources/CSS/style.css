@@ -3,7 +3,7 @@
 html{
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  text-align: left;
   color: darkslategray;
 }
 
@@ -11,10 +11,31 @@ html{
   display: flex;
 }
 
-.sitecontainer{
+.flexc{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h1,h2,h3{
+  font-weight: bold;
+}
+
+/* .sitecontainer{
   width: 1024px;
   margin: 0 auto;
-}
+} */
 
 /*** Header ***/
 
@@ -74,23 +95,21 @@ header{
 }
 
 .bannertext{
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 40%;
+  width: 400px;
   margin-left: 1.5rem;
-  text-align: left;
   line-height: 1.5rem;
 }
 
 .bannertext h1{
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
-.bannertext h2{
+.bannertext h3{
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 .startbtn{
   width: 100%;
@@ -102,4 +121,100 @@ header{
 
 .startbtn span a{
   color: white;
+}
+
+/*** Information ***/
+
+.information{
+  justify-content: flex-start;
+  padding-top: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+/**First Column**/
+.infocolumn1{
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.infocolumn1 img{
+  max-width: 100%;
+  height: auto;
+}
+
+.infocolumn1 h2{
+  margin-top: 2rem;
+}
+
+.infoquote{
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/**Second Column**/
+.infocolumn2{
+  width: 40%;
+}
+
+.infosection{
+  padding: 1rem 0 1rem 1rem;
+}
+
+.infocolumn2img{
+  width: 35%;
+}
+
+.infocolumn2img img{
+  width: 100%;
+  height: auto;
+}
+
+.infosectiontext{
+  margin-left: 1rem;
+  width: 65%;
+  justify-content: center;
+}
+
+.infosectiontext h3,
+.infosectiontext span{
+  margin-bottom: 0.5rem;
+}
+
+.readmore a{
+  color: cornflowerblue;
+}
+
+/*** Courses ***/
+.courses{
+  background-color: lightgray;
+}
+
+.courses h2{
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.courserows{
+  padding: 0 4.5rem 0 4.5rem;
+}
+
+.course{
+  flex-direction: column;
+  margin: 0 2rem 2rem 0;
+  background-color: white;
+  width: 33%;
+}
+
+.courseimg img{
+  max-width: 100%;
+  height: auto;
+}
+
+.coursetext{
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.coursetext h3,
+.coursetext span{
+  margin-top: 0.5rem;
 }
