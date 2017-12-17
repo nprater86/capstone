@@ -28,7 +28,7 @@
     <!--Banner Section -->
 
     <div class="banner">
-      <div class="bannercontent flex sitecontainer">
+      <div class="bannercontent flex">
         <div class="bannerimg">
           <img class="bannerimg" src=".\resources\images\banner.jpg">
         </div>
@@ -44,7 +44,7 @@
 
     <!-- Information Section -->
 
-    <div class="information flex sitecontainer">
+    <div class="information flex">
       <!-- First column -->
       <div class="infocolumn1 flexc">
         <img src=".\resources\images\information-main.jpg">
@@ -171,35 +171,41 @@
 
     <!-- Thesis Section -->
 
-    <div class="thesis flex">
+    <div class="thesis flexc">
       <h2>Thesis exhibit</h2>
       <!-- Container for video thesis and other thesis columns -->
       <div class="thesiscontainer flex">
         <!-- Video Column -->
-        <div class="thesisvideocolumn flex">
+        <div class="thesisvideocolumn flexc">
           <div class="thesisvideo">
             <video src=".\resources\videos\thesis.mp4" autoplay loop>
               Video not available
             </video>
           </div>
-          <h3>Reimagine urban</h3>
-          <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <div class="thesisvideocolumntext flexc">
+            <h3>Reimagine urban</h3>
+            <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          </div>
         </div>
         <!-- Other thesis column -->
-        <div class="otherthesiscolumn">
-          <div class="fisma">
+        <div class="otherthesiscolumn flexc">
+          <div class="fisma flex">
             <div class="thesisimg">
-              <img src=".\resources\images\thesis-fisma.jpg"
+              <img src=".\resources\images\thesis-fisma.jpg">
             </div>
-            <h2>Fisma: Design and Prototype</h2>
-            <span>Designer showcase of new prototype product</span>
+            <div class="exhibittext flexc">
+              <h3>Fisma: Design and Prototype</h3>
+              <span>Designer showcase of new prototype product</span>
+            </div>
           </div>
-          <div class="nowandthen">
+          <div class="nowandthen flex">
             <div class="thesisimg">
-              <img src=".\resources\images\thesis-now-and-then.jpg"
+              <img src=".\resources\images\thesis-now-and-then.jpg">
             </div>
-            <h2>Now and then</h2>
-            <span>Research study about New York</span>
+            <div class="exhibittext flexc">
+              <h3>Now and then</h3>
+              <span>Research study about New York</span>
+            </div>
           </div>
         </div>
       </div>

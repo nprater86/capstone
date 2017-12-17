@@ -1,10 +1,11 @@
-/*** Page Rules ***/
+/*************************** Page Rules ***************************/
 
 html{
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
   color: darkslategray;
+  line-height: 1.5;
 }
 
 .flex{
@@ -32,12 +33,11 @@ h1,h2,h3{
   font-weight: bold;
 }
 
-/* .sitecontainer{
-  width: 1024px;
-  margin: 0 auto;
-} */
+h1,h2,h3,span,p{
+  line-height: 1.5;
+}
 
-/*** Header ***/
+/*************************** Header ***************************/
 
 header{
   height: 4rem;
@@ -75,9 +75,9 @@ header{
 }
 
 
-/*** Content ***/
+/*************************** Content ***************************/
 
-/*** Banner ***/
+/*************************** Banner ***************************/
 
 .banner{
   background-color: lightgray;
@@ -99,17 +99,14 @@ header{
   align-items: flex-start;
   width: 400px;
   margin-left: 1.5rem;
-  line-height: 1.5rem;
 }
 
 .bannertext h1{
   margin-bottom: 2rem;
-  line-height: 1.5;
 }
 
 .bannertext h3{
   margin-bottom: 2rem;
-  line-height: 1.5;
 }
 .startbtn{
   width: 100%;
@@ -123,18 +120,17 @@ header{
   color: white;
 }
 
-/*** Information ***/
+/*************************** Information ***************************/
 
 .information{
   justify-content: flex-start;
-  padding-top: 2rem;
   margin-left: 1.5rem;
-  margin-bottom: 2rem;
 }
 /**First Column**/
 .infocolumn1{
   width: 60%;
-  padding-right: 1.5rem;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid lightgray;
 }
 
 .infocolumn1 img{
@@ -148,7 +144,6 @@ header{
 
 .infoquote{
   margin-top: 1.5rem;
-  line-height: 1.5;
 }
 
 /**Second Column**/
@@ -158,6 +153,11 @@ header{
 
 .infosection{
   padding: 1rem 0 1rem 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.infosection:nth-child(3n+0){
+  background-color: lightgray;
 }
 
 .infocolumn2img{
@@ -170,7 +170,7 @@ header{
 }
 
 .infosectiontext{
-  margin-left: 1rem;
+  margin: 0 1rem 0 1rem;
   width: 65%;
   justify-content: center;
 }
@@ -184,7 +184,7 @@ header{
   color: cornflowerblue;
 }
 
-/*** Courses ***/
+/*************************** Courses ***************************/
 .courses{
   background-color: lightgray;
 }
@@ -218,3 +218,59 @@ header{
 .coursetext span{
   margin-top: 0.5rem;
 }
+
+/*************************** Thesis ***************************/
+
+/** Video Column **/
+
+.thesis h2{
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+.thesisvideocolumn{
+  width: 60%;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesisvideo video{
+  max-width: 100%;
+  height: auto;
+}
+
+.thesisvideocolumntext{
+  padding-top: 1.5rem;
+}
+
+.thesisvideocolumntext p{
+  padding-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.otherthesiscolumn{
+  width: 40%;
+}
+
+.fisma{
+  background-color: lightgray;
+}
+
+.thesisimg{
+  width: 35%;
+  padding: 1rem;
+}
+
+.thesisimg img{
+  width: 100%;
+  height: auto;
+}
+
+.exhibittext{
+  width: 65%;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.exhibittext h3{
+  margin: 1rem 0;
+}
+/** Other Column **/
