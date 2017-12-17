@@ -8,6 +8,10 @@ html{
   line-height: 1.5;
 }
 
+html,body,#page,header {
+  height:100%;
+}
+
 .flex{
   display: flex;
 }
@@ -48,7 +52,7 @@ header{
   justify-content: space-between;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .logo{
@@ -76,6 +80,10 @@ header{
 
 
 /*************************** Content ***************************/
+
+#content {
+  min-height: calc(100% - 7rem);
+}
 
 /*************************** Banner ***************************/
 
@@ -246,6 +254,8 @@ header{
   line-height: 1.5;
 }
 
+/** Other Column **/
+
 .otherthesiscolumn{
   width: 40%;
 }
@@ -273,4 +283,15 @@ header{
 .exhibittext h3{
   margin: 1rem 0;
 }
-/** Other Column **/
+
+/*************************** Footer ***************************/
+
+footer{
+  border-top: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+.termsprivacy span a{
+  padding-left: 1rem;
+}
