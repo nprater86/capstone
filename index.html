@@ -3,7 +3,7 @@
   <head>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,800" rel="stylesheet">
     <title>ColmarAcademy | Home</title>
   </head>
   <body>
@@ -11,11 +11,13 @@
     <!-- Header -->
 
     <header class=" desktopheader flex">
-      <div class="logo flex">
-        <img class="logosvg" src=".\resources\images\ic-logo.svg">
-        <span id="colmar">COLMAR</span>
-        <span id="academy">ACADEMY</span>
-      </div>
+      <a href="#">
+        <div class="logo flex">
+          <img class="logosvg" src=".\resources\images\ic-logo.svg">
+          <span id="colmar">COLMAR</span>
+          <span id="academy">ACADEMY</span>
+        </div>
+      </a>
       <div class="nav flex">
         <span><a href="#">On campus</a></span>
         <span><a href="#">Online</a></span>
@@ -35,28 +37,31 @@
     <!--Banner Section -->
 
     <div class="banner">
-      <div class="bannercontent flex">
+      <div class="bannercontent sitecontainer flex">
         <div class="bannerimg">
           <img class="bannerimg" src=".\resources\images\banner.jpg">
         </div>
         <div class="bannertext flexc">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <div class="startbtn">
-            <span><a href="#">Start here</a></span>
-          </div>
+          <a class="startbtn" href="#">
+            <div>
+              <span>Start here</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- Information Section -->
 
-    <div class="information flex">
+    <div class="information sitecontainer flex">
       <!-- First column -->
       <div class="infocolumn1 flexc">
         <img src=".\resources\images\information-main.jpg">
         <h2>It doesn't hurt to keep practicing</h2>
-        <p class="infoquote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."<br><br><br>Emanuel, Sr Strategist at Hiring.com</p>
+        <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        <p><br><br>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <!-- Second column -->
       <div class="infocolumn2 flexc">
@@ -101,78 +106,80 @@
 
     <!-- Course Section -->
 
-    <div class="courses flexc">
-      <h2>Start learning</h2>
-      <div class="courserows">
-        <!-- First row -->
-        <div class="courserow flex">
-          <!--Software engineering -->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-software.jpg">
+    <div class="courses">
+      <div class="coursecontent sitecontainer flexc">
+        <h2>Start learning</h2>
+        <div class="courserows">
+          <!-- First row -->
+          <div class="courserow flex">
+            <!--Software engineering -->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-software.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Software engineering</h3>
+                <span>COURSES</span>
+                <span>Web Development, Mobile Development, iOT, APIs</span>
+              </div>
             </div>
-            <div class="coursetext flexc">
-              <h3>Software engineering</h3>
-              <span>COURSES</span>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+            <!-- Computer art-->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-computer-art.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Computer art</h3>
+                <span>COURSES</span>
+                <span>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
+              </div>
             </div>
-          </div>
-          <!-- Computer art-->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-computer-art.jpg">
-            </div>
-            <div class="coursetext flexc">
-              <h3>Computer art</h3>
-              <span>COURSES</span>
-              <span>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
-            </div>
-          </div>
-          <!-- Design -->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-design.jpg">
-            </div>
-            <div class="coursetext flexc">
-              <h3>Design</h3>
-              <span>COURSES</span>
-              <span>User Experience Design, User Research, Visual Design</span>
-            </div>
-          </div>
-        </div>
-        <!-- Second row-->
-        <div class="courserow flex">
-          <!-- Data -->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-data.jpg">
-            </div>
-            <div class="coursetext flexc">
-              <h3>Data</h3>
-              <span>COURSES</span>
-              <span>Data Science, Big Data, SQL, Data Visualization</span>
+           <!-- Design -->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-design.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Design</h3>
+                <span>COURSES</span>
+                <span>User Experience Design, User Research, Visual Design</span>
+              </div>
             </div>
           </div>
-          <!--Business -->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-business.jpg">
+          <!-- Second row-->
+          <div class="courserow flex">
+            <!-- Data -->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-data.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Data</h3>
+                <span>COURSES</span>
+                <span>Data Science, Big Data, SQL, Data Visualization</span>
+              </div>
             </div>
-            <div class="coursetext flexc">
-              <h3>Business</h3>
-              <span>COURSES</span>
-              <span>Product Development, Business Development, Startup</span>
+            <!--Business -->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-business.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Business</h3>
+                <span>COURSES</span>
+                <span>Product Development, Business Development, Startup</span>
+              </div>
             </div>
-          </div>
-          <!-- Marketing -->
-          <div class="course flexc">
-            <div class="courseimg">
-              <img src=".\resources\images\course-marketing.jpg">
-            </div>
-            <div class="coursetext flexc">
-              <h3>Marketing</h3>
-              <span>COURSES</span>
-              <span>Analytics, Content Marketing, Mobile Marketing</span>
+            <!-- Marketing -->
+            <div class="course flexc">
+              <div class="courseimg">
+                <img src=".\resources\images\course-marketing.jpg">
+              </div>
+              <div class="coursetext flexc">
+                <h3>Marketing</h3>
+                <span>COURSES</span>
+                <span>Analytics, Content Marketing, Mobile Marketing</span>
+              </div>
             </div>
           </div>
         </div>
@@ -181,7 +188,7 @@
 
     <!-- Thesis Section -->
 
-    <div class="thesis flexc">
+    <div class="thesis sitecontainer flexc">
       <h2>Thesis exhibit</h2>
       <!-- Container for video thesis and other thesis columns -->
       <div class="thesiscontainer flex">

@@ -41,6 +41,16 @@ h1,h2,h3,span,p{
   line-height: 1.5;
 }
 
+.quote{
+  font-style: italic;
+}
+
+@media only screen and (max-width:320){
+  html{
+    font-size: 12px;
+  }
+}
+
 /*************************** Header ***************************/
 
 .desktopheader{
@@ -56,6 +66,7 @@ h1,h2,h3,span,p{
 }
 
 .logo{
+  color: darkslategray;
   align-items: center;
   padding-left: 1.5rem;
 }
@@ -73,6 +84,14 @@ h1,h2,h3,span,p{
 
 .nav span{
   margin-left: 1rem;
+}
+
+.nav span:nth-child(4n+0){
+  font-weight: bold;
+}
+
+.nav span a:hover{
+  font-weight: bold;
 }
 
 #colmar,
@@ -116,6 +135,25 @@ h1,h2,h3,span,p{
   min-height: calc(100% - 7rem);
 }
 
+.sitecontainer{
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 842px){
+  .sitecontainer{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .sitecontainer{
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
 /*************************** Banner ***************************/
 
 .banner{
@@ -153,16 +191,24 @@ h1,h2,h3,span,p{
   background-color: darkslategray;
   font-weight: bold;
   padding: 0.5rem 0 0.5rem 0;
+  border-radius: 5px;
+  transition: background-color 100ms ease-in-out;
 }
 
-.startbtn span a{
+.startbtn:hover{
+  background-color: red;
+}
+
+.startbtn span{
   color: white;
+  text-align: center;
 }
 
 @media only screen and (max-width: 842px){
 
   .banner{
-    padding: 4rem 0 2rem;
+    padding: 4rem 0 2rem 0;
+    margin: 0;
   }
 
   .bannercontent{
@@ -176,16 +222,40 @@ h1,h2,h3,span,p{
   }
 
   .bannertext{
-    margin: 2rem 0 0 0;
+    padding: 0;
+    margin: 0;
   }
 
+  .bannertext h1,
+  .bannertext h3,
+  .bannertext a div span{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .startbtn{
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0 1rem 0 1rem;
+  }
 }
+
+@media only screen and (max-width: 400px){
+
+  .bannertext{
+    width: 100%;
+  }
+  .startbtn{
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0 1rem 0 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
 
 /*************************** Information ***************************/
 
 .information{
   justify-content: flex-start;
-  margin-left: 1.5rem;
 }
 /**First Column**/
 .infocolumn1{
@@ -205,6 +275,7 @@ h1,h2,h3,span,p{
 
 .infoquote{
   margin-top: 1.5rem;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 842px){
@@ -216,6 +287,7 @@ h1,h2,h3,span,p{
 /**Second Column**/
 .infocolumn2{
   width: 40%;
+  border-right: 1px solid lightgray;
 }
 
 .infosection{
@@ -249,6 +321,10 @@ h1,h2,h3,span,p{
 
 .readmore a{
   color: cornflowerblue;
+}
+
+.readmore a:hover{
+  font-weight: bold;
 }
 
 .mobileimg{
@@ -477,6 +553,10 @@ footer{
 
 .termsprivacy span a{
   padding-left: 1rem;
+}
+
+.termsprivacy span a:hover{
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 842px){
