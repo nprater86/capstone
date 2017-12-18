@@ -158,7 +158,11 @@ h1,h2,h3,span,p{
 
 .banner{
   background-color: lightgray;
-  padding: 6rem 0 2rem 1.5rem;
+  padding: 6rem 0 2rem 0;
+}
+
+.bannercontent{
+  padding-left: 1.5rem;
 }
 
 .bannerimg {
@@ -289,6 +293,7 @@ h1,h2,h3,span,p{
 .infocolumn2{
   width: 40%;
   border-right: 1px solid lightgray;
+  margin-top: 1rem;
 }
 
 .infosection{
