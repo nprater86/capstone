@@ -43,7 +43,7 @@ h1,h2,h3,span,p{
 
 /*************************** Header ***************************/
 
-header{
+.desktopheader{
   height: 4rem;
   width: 100%;
   background-color: white;
@@ -68,6 +68,7 @@ header{
 .nav{
   padding-right: 1.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav span{
@@ -76,6 +77,31 @@ header{
 
 #colmar{
   font-weight: bold;
+}
+
+.mobileheader{
+  display: none;
+}
+
+@media only screen and (max-width: 640px){
+
+  .desktopheader{
+    display: none;
+  }
+
+  .mobileheader{
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+  }
+
 }
 
 
@@ -128,6 +154,28 @@ header{
   color: white;
 }
 
+@media only screen and (max-width: 640px){
+
+  .banner{
+    padding: 6rem 0 2rem;
+  }
+
+  .bannercontent{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .bannertext{
+    margin: 2rem 0 0 0;
+  }
+
+}
+
 /*************************** Information ***************************/
 
 .information{
@@ -152,6 +200,12 @@ header{
 
 .infoquote{
   margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 640px){
+  .infocolumn1{
+    display: none;
+  }
 }
 
 /**Second Column**/
@@ -190,6 +244,13 @@ header{
 
 .readmore a{
   color: cornflowerblue;
+}
+
+@media only screen and (max-width: 640px){
+  .infocolumn2{
+    width: 100%;
+  }
+  }
 }
 
 /*************************** Courses ***************************/
