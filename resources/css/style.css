@@ -2,7 +2,7 @@
 
 html{
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   color: darkslategray;
   line-height: 1.5;
@@ -43,6 +43,8 @@ h1,h2,h3,span,p{
 
 .quote{
   font-style: italic;
+  font-size: 1.5rem;
+  font-family: 'Noto Serif', serif;
 }
 
 @media only screen and (max-width:320){
@@ -61,7 +63,6 @@ h1,h2,h3,span,p{
   z-index: 5;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid lightgray;
 }
 
@@ -71,6 +72,9 @@ h1,h2,h3,span,p{
   padding-left: 1.5rem;
 }
 
+.logo span{
+  font-family: 'Montserrat', sans-serif;
+}
 .logosvg{
   height: 2rem;
   width: auto;
@@ -275,7 +279,7 @@ h1,h2,h3,span,p{
 }
 
 .infocolumn1 h2{
-  margin-top: 2rem;
+  margin: 2rem 0 1.5rem 0;
 }
 
 .infoquote{
