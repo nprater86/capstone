@@ -154,10 +154,10 @@ h1,h2,h3,span,p{
   color: white;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 842px){
 
   .banner{
-    padding: 6rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
 
   .bannercontent{
@@ -202,7 +202,7 @@ h1,h2,h3,span,p{
   margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 842px){
   .infocolumn1{
     display: none;
   }
@@ -246,11 +246,58 @@ h1,h2,h3,span,p{
   color: cornflowerblue;
 }
 
-@media only screen and (max-width: 640px){
+.mobileimg{
+  display: none;
+}
+
+@media only screen and (max-width: 842px){
+
+
+
+  .information{
+    margin: 0;
+    border-bottom: 1px solid lightgray;
+  }
+
   .infocolumn2{
     width: 100%;
+    padding: 1rem;
   }
+
+  .infosection:nth-child(3n+0){
+    background-color: white;
   }
+
+  .infocolumn2img{
+    width: 100%;
+  }
+
+  .infocolumn2img img{
+    width: 100%;
+    height: auto;
+  }
+
+  .infosectiontext{
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .mobileimg{
+    display: block;
+    width: 100%;
+  }
+
+  .desktopimg{
+    display: none;
+  }
+
+  .infosection{
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+  }
+
 }
 
 /*************************** Courses ***************************/
@@ -268,7 +315,6 @@ h1,h2,h3,span,p{
 }
 
 .course{
-  flex-direction: column;
   margin: 0 2rem 2rem 0;
   background-color: white;
   width: 33%;
@@ -286,6 +332,43 @@ h1,h2,h3,span,p{
 .coursetext h3,
 .coursetext span{
   margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 842px){
+
+  .courses{
+    background-color: white;
+  }
+
+  .courses h2{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+  }
+
+  .courseimg{
+    display: none;
+  }
+
+  .coursetext span{
+    display: none;
+  }
+
+  .courserow{
+    flex-direction: column;
+  }
+
+  .course{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .coursetext{
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: lightgray;
+  }
+
 }
 
 /*************************** Thesis ***************************/
@@ -321,7 +404,11 @@ h1,h2,h3,span,p{
   width: 40%;
 }
 
-.fisma{
+.exhibit{
+  padding-right: 1rem;
+}
+
+.exhibit:nth-child(2n+1){
   background-color: lightgray;
 }
 
@@ -345,6 +432,36 @@ h1,h2,h3,span,p{
   margin: 1rem 0;
 }
 
+@media only screen and (max-width: 842px){
+  .otherthesiscolumn{
+    display: none;
+  }
+
+  .thesis h2{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .thesisvideocolumntext{
+    display: none;
+  }
+
+  .thesisvideocolumn{
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesisvideo{
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  .thesisvideo video{
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*************************** Footer ***************************/
 
 footer{
@@ -355,4 +472,10 @@ footer{
 
 .termsprivacy span a{
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 842px){
+  .termsprivacy{
+    display: none;
+  }
 }
