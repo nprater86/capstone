@@ -269,6 +269,7 @@ nav span a:hover{
 
 .information{
   justify-content: flex-start;
+  border-right: 1px solid lightgray;
 }
 /**First Column**/
 .infocolumn1{
@@ -300,7 +301,6 @@ nav span a:hover{
 /**Second Column**/
 .infocolumn2{
   width: 40%;
-  border-right: 1px solid lightgray;
   margin-top: 1rem;
 }
 
