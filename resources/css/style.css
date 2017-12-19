@@ -236,6 +236,7 @@ nav span a:hover{
   .bannertext{
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 
   .bannertext h1,
@@ -248,22 +249,9 @@ nav span a:hover{
   .startbtn{
     padding: 0.5rem 0 0.5rem 0;
     margin: 0 1rem 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 842px){
-
-  .bannertext{
-    width: 100%;
-  }
-
-  .startbtn{
-    padding: 0.5rem 0 0.5rem 0;
-    margin: 0 1rem 0 1rem;
     width: calc(100% - 2rem);
   }
 }
-
 
 /*************************** Information ***************************/
 
