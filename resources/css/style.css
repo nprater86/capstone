@@ -226,6 +226,7 @@ nav span a:hover{
   .bannercontent{
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
   }
 
   .bannerimg {
