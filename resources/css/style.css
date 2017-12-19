@@ -358,6 +358,7 @@ nav span a:hover{
   .infocolumn2{
     width: 100%;
     padding: 1rem;
+    margin-top: 0;
   }
 
   .infosection:nth-child(3n+0){
@@ -375,6 +376,10 @@ nav span a:hover{
 
   .infosectiontext{
     padding: 1rem;
+  }
+
+  .infosection{
+    border-bottom: 0;
   }
 }
 
